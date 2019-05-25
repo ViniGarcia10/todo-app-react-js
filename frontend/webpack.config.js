@@ -5,11 +5,11 @@ module.exports = {
     entry: './src/index.jsx',
     output: {
         path: __dirname + '/public',
-        filename: './app.js',
+        filename: './app.js'
     },
     devServer: {
         port: 8080,
-        contentBase: ' ./public ',
+        contentBase: './public',
     },
     resolve: {
         extensions: ['', '.js', '.jsx'],
@@ -27,13 +27,13 @@ module.exports = {
             exclude: /node_modules/,
             query: {
                 presets: ['es2015', 'react'],
-                Plugins: ['transform-object-rest-spread']
+                plugins: ['transform-object-rest-spread']
             }
         }, {
             test: /\.css$/,
             loader: ExtractTextPlugin.extract('style-loader', 'css-loader')
         }, {
-            test: /\.woff|.woff2|.ttf|.eot|.svg*.*$/,
+            test: /\.woff|.ttf|.woff2|.eot|.svg*.*$/,
             loader: 'file'
         }]
     }
