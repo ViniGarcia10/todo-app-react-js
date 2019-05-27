@@ -9,8 +9,13 @@
 
 #td-botoes {
     text-align: center;
+    width: 105px;
 }
 
 #acoes {
     text-align: center;
+}
+
+.todoForm {
+    padding-bottom: 60px;
 }
